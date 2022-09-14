@@ -1,0 +1,258 @@
+.main{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('C:/Users/bla_p/Desktop/개발/minsu-birthday/image/main-background.png');
+    background-size: cover;
+    background-position-x: 30%;
+}
+.minsu_one{
+    position: relative;
+    right: -30px;
+    top: 20px;
+    animation: minsu-one 8s infinite;
+    transition-timing-function: cubic-bezier(0.450, 0.240, 0.855, 1.205); 
+}
+.minsu_two{
+    position: relative;
+    right: -50px;
+    top:30px;
+    animation: minsu-two 8s infinite;
+    transition-timing-function: cubic-bezier(0.450, 0.240, 0.855, 1.205);   
+}
+@keyframes minsu-one {
+    0%{
+        transform: scale(0.8) translateY(-20px);
+    }
+    10%{
+        transform: scale(0.8);
+    }
+    30%{
+        transform: scale(0.8) translateY(-20px);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    60%{
+        transform: scale(0.9) translateY(-20px) rotateY(360deg);
+    }
+    70%{
+        transform: scale(0.8) rotateY(360deg);
+    }
+    80%{
+        transform: scale(0.8) translateY(0px);
+    }
+    100%{
+        transform: scale(0.8) translateY(-20px);
+    }
+}
+@keyframes minsu-two {
+    0%{
+        transform: scale(0.8) translateY(0px);
+    }
+    10%{
+        transform: scale(0.8) translateY(-20px);
+    }
+    30%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.8) translateY(-20px);
+    }
+    60%{
+        transform: scale(0.8);
+    }
+    70%{
+        transform: scale(0.8);
+    }
+    80%{
+        transform: scale(0.9) translateY(-20px) rotateY(360deg);
+    }
+    100%{
+        transform: scale(0.8) rotateY(360deg);
+    }
+}
+.main_title>h1{
+    position: relative;
+    right: -50px;
+    top:-30px;
+    text-align: center;
+    font-size: 7em;
+    color: var(--purple);
+    text-shadow: -3px 0px white, 0px 3px white, 3px 0px white, 0px -3px white;
+    animation: up-down 3s infinite;
+    transition-timing-function: cubic-bezier(0.450, 0.240, 0.855, 1.205);
+}
+  @keyframes up-down {
+    0% {
+        transform: translateY(20px) scale(1.2);
+    }
+    50%{
+        transform: translateY(0px) scale(1.3);
+    }
+    100% {
+        transform: translateY(20px) scale(1.2);
+    }
+  }
+.song{
+    position: relative;
+    top: 70px;
+    right: -50px;
+  }
+.do-you-know{
+    margin-bottom: -110px;
+}
+.do-you-know>img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(30%); 
+}
+.do-you-know_text{
+    position: relative;
+    top: -250px;
+    text-align: center;
+}
+.do-you-know_text>h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 10px;
+}
+.do-you-know_text>h2{
+    font-size: 25px;
+    color:white;
+}
+.three-point{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 236, 255);
+    padding: 90px 0px;
+}
+.shine_one>img,
+.shine_two>img{
+    width:80px;
+}
+.shine_one{
+    position: relative;
+    top: -120px;
+    right: -220px;
+    animation: shine_one 2.5s ease-in-out infinite;
+}
+.shine_two{
+    position: relative;
+    top: 120px;
+    right: 220px;
+    animation: shine_one 2.5s ease-in-out infinite;
+    animation-delay:0.5s;
+}
+@keyframes shine_one{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes shine_two{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.three-point_content{
+    text-align: center;
+}
+.three-point_content>h1{
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    background-color: var(--purple);
+    padding: 6px 10px;
+    margin-bottom: 40px;
+}
+.three-point_content>h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 80px;
+    color: var(--purple);
+    
+}
+.points{
+    display: flex;
+}
+.each-point{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 40px;
+}
+.each-point>img{
+    width: 180px;
+    height:180px;
+    border-radius: 50%;
+    border: solid 4px var(--purple);
+    margin-bottom: 10px;
+}
+.each-point>span{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.7);
+}
+.question{
+    background-color: var(--purple);
+    text-align: center;
+    padding: 80px 0px;
+}
+.question>h1{
+    font-size:60px;
+    color: rgb(231, 218, 100);
+    text-shadow: -3px 0px rgb(78, 31, 99), 0px 3px rgb(78, 31, 99), 3px 0px rgb(78, 31, 99), 0px -3px rgb(78, 31, 99);
+    margin-bottom: 60px;
+}
+.question>h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+.question>h3{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(215, 179, 225);
+    margin-bottom: 10px;
+}
+input[type=text]{
+    height: 2em;
+    width: 30em;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'ulsanjunggu';
+    border: solid 5px rgb(188, 138, 245);
+    transition: all 0.3s ease-in-out;
+}
+input[type=text]:focus{
+    height: 2.5em;
+    width: 33em;
+    transform: translateY(-8px);
+}
+p{
+    margin-top: 40px;
+}
+input[type=submit]{
+    color:rgb(87, 46, 106) ;
+    font-size: 1em;
+    font-family: 'HBIOS-SYS';
+    padding: 5px 10px;
+}
+

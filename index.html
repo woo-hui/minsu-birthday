@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css\style.css" />
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="image\birthday-cake.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy BirthDay!</title>
+  </head>
+  <body>
+    <div class="main">
+      <img class="minsu_two" src="image\minsu2.png" />
+      <div class="main_title">
+        <h1>Happy <br />BirthDay!</h1>
+        <audio
+          class="song"
+          autoplay="autoplay"
+          controls="controls"
+          loop="loop"
+          src="image\Happy Birthday (at the Pub) - E's Jammy Jams.mp3"
+        ></audio>
+      </div>
+      <img class="minsu_one" src="image\minsu1.png" />
+    </div>
+
+    <div class="do-you-know">
+      <img src="image\띠지.jpg" />
+      <div class="do-you-know_text">
+        <h1>Do You Know Minsu?</h1>
+        <h2>민수를 아십니까?</h2>
+      </div>
+    </div>
+    <div class="three-point">
+      <div class="shine_one">
+        <img src="image\shine.png" />
+      </div>
+      <div class="three-point_content">
+        <h1>3 Ang Kums of Minsu</h1>
+        <h2>민수의 세 가지 앙-큼</h2>
+        <div class="points">
+          <div class="each-point">
+            <img src="image\pure.jpg" />
+            <span>CUTE</span>
+          </div>
+          <div class="each-point">
+            <img src="image\sexy.jpg" />
+            <span>SEXY</span>
+          </div>
+          <div class="each-point">
+            <img src="image\spicy.jpg" />
+            <span>SPICY</span>
+          </div>
+        </div>
+      </div>
+      <div class="shine_two">
+        <img src="image\shine.png" />
+      </div>
+    </div>
+    <div class="question">
+      <h1>★ 편지가 도착했습니다 ★</h1>
+      <h2>수령인의 이름을 입력해 주세요</h2>
+      <h3>
+        HINT: 세카이데 이치방 킹갓제네럴 러블리 큐티 엘레강스 파워풀하도록
+        카와이 어도러블한 사람은?
+      </h3>
+      <form
+        action="letter.html"
+        target="_blank"
+        method="get"
+        id="question-form"
+      >
+        <input id="answer" name="name" required type="text" />
+        <p><input type="submit" onclick="func()" value="편지 수령하기" /></p>
+        <script type="text/javascript">
+          function func() {
+            let answer = document.getElementById("answer").value;
+            if (answer == "") {
+              alert("수령인을 입력해 주세요.");
+            } else if (answer == "김민수") {
+              alert("편지를 수령하셨습니다!");
+            } else {
+              document.getElementById("answer").value = "";
+              alert("수령인이 일치하지 않습니다.");
+            }
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>
